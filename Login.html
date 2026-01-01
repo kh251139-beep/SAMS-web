@@ -1,47 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Saudi Airlines - Login</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<body>
-<header>
-<div class="images">
-<img src="images.png" alt="Saudi Airlines logo">
-<span>Saudi Airlines</span>
-</div>
+  <meta charset="UTF-8">
+  <title>Saudi Airlines - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<nav aria-label="Primary Navigation">
-<a href="index.html" class="nav-btn">Home</a>
-<a href="#" class="nav-btn">Flights</a>
-<a href="#" class="nav-btn">Check-in</a>
-<a href="login.html" class="nav-btn">Login</a>
-</nav>
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <style>
+    body {
+      font-family: "Raleway", sans-serif;
+    }
+    header {
+      background: #006c35;
+      color: white;
+      padding: 15px;
+    }
+    .images {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .images img {
+      height: 40px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    .nav-btn {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 30px;
+    }
+    form {
+      max-width: 400px;
+    }
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="images">
+    <img src="images.png" alt="Saudi Airlines Logo">
+    <span><strong>Saudi Airlines</strong></span>
+  </div>
+
+  <nav aria-label="Primary Navigation">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="#" class="nav-btn">Flights</a>
+    <a href="#" class="nav-btn">Check-in</a>
+    <a href="login.html" class="nav-btn">Login</a>
+  </nav>
 </header>
 
 <main>
-<section class="search">
-<h1>Search Flights</h1>
+  <section class="search">
+    <h1>Login</h1>
 
-<form>
-<label for="Email">Email</label>
-<input id="Email" type="text" required>
+    <form>
+      <label for="email">Email</label><br>
+      <input id="email" name="email" type="email" required class="w3-input w3-border"><br>
 
-<label for="Password">Password</label>
-<input id="Password" type="text" required>
+      <label for="password">Password</label><br>
+      <input id="password" name="password" type="password" required class="w3-input w3-border"><br>
 
-<button type="submit">Login</button>
-</form>
-</section>
+      <button type="submit" class="w3-button w3-green w3-margin-top">
+        Login
+      </button>
+    </form>
+  </section>
 
-<section class="promo">
-<h2>Special Offers</h2>
-<p>©Saudi Airline.</p>
-
-
-</section>
+  <section class="promo">
+    <h2>Special Offers</h2>
+    <p>Discover exclusive deals for Saudi Airlines customers.</p>
+  </section>
 </main>
+
+<footer>
+  <p>Contact: support@saudia.com | +966 9200 22222</p>
+  <a href="#">Accessibility Statement</a>
+</footer>
+
 </body>
 </html>

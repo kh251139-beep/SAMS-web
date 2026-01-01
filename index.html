@@ -1,48 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Saudi Airlines - Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-</head>
-<body>
-<header>
-<div class="images">
-<img src="images.png" alt="Saudi Airlines logo">
-<span>Saudi Airlines</span>
-</div>
+  <meta charset="UTF-8">
+  <title>Saudi Airlines - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<nav aria-label="Primary Navigation">
-<a href="index.html" class="nav-btn">Home</a>
-<a href="#" class="nav-btn">Flights</a>
-<a href="#" class="nav-btn">Check-in</a>
-<a href="login.html" class="nav-btn">Login</a>
-</nav>
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+  <style>
+    body {
+      font-family: "Raleway", sans-serif;
+    }
+    header {
+      background: #006c35;
+      color: white;
+      padding: 15px;
+    }
+    header .images {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    header img {
+      height: 40px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    .nav-btn {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .search, .promo {
+      padding: 30px;
+    }
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="images">
+    <img src="images.png" alt="Saudi Airlines Logo">
+    <span><strong>Saudi Airlines</strong></span>
+  </div>
+
+  <nav aria-label="Primary Navigation">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="#" class="nav-btn">Flights</a>
+    <a href="#" class="nav-btn">Check-in</a>
+    <a href="login.html" class="nav-btn">Login</a>
+  </nav>
 </header>
 
 <main>
-<section class="search">
-<h1>Search Flights</h1>
 
-<form>
-<label for="from">From</label>
-<input id="from" type="text" required>
+  <section class="search">
+    <h1>Search Flights</h1>
 
-<label for="to">To</label>
-<input id="to" type="text" required>
+    <form>
+      <label for="from">From</label><br>
+      <input id="from" name="from" type="text" required><br><br>
 
-<label for="date">Travel Date</label>
-<input id="date" type="date" required>
+      <label for="to">To</label><br>
+      <input id="to" name="to" type="text" required><br><br>
 
-<button type="submit">Search Flights</button>
-</form>
-</section>
+      <label for="date">Travel Date</label><br>
+      <input id="date" name="date" type="date" required><br><br>
 
-<section class="promo">
-<h2>Special Offers</h2>
-<p>©Enjoy exclusive fares on domestic and international destinations.</p>
+      <button type="submit" class="w3-button w3-green">
+        Search Flights
+      </button>
+    </form>
+  </section>
+
+  <section class="promo">
+    <h2>Special Offers</h2>
+    <p>Enjoy exclusive fares on domestic and international destinations.</p>
+  </section>
+
+</main>
 
 <footer>
   <p>Contact: support@saudia.com | +966 9200 22222</p>
@@ -54,7 +102,5 @@
   <a href="#">Accessibility Statement</a>
 </footer>
 
-</section>
-</main>
 </body>
 </html>
